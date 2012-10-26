@@ -1,9 +1,8 @@
 \section{Design Decisions}
-We have chosen to use the MVC design pattern for our \CS application. For the overall build we will be using the client-server pattern.
+We have chosen to use the MVC design pattern for our \CS application.
 
-The client-server pattern is the obvious choice since we are building a client which will be communicating with one or more servers.
-
-MVC separates the three parts of our client, and makes it easy to switch one part. This also makes it easy for us to wait with the visual part and focus on the backbone of our system.
+MVC separates our client into three parts, and makes it easy to switch one part with a replacement. This also makes it easy for us to wait with the visual part and focus on the backbone of our system.
+Using MVC makes it easy to add more calendar formats, as long as the handling class meets the interface of our model.
 
 \begin{figure}[h!]
   \includegraphics[width=\textwidth,natwidth=1109,natheight=559]{illustrations/PhysicalModel.png}
