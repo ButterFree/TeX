@@ -3,20 +3,68 @@
   \ra{1.3}
   \begin{tabularx}{\textwidth}{@{}rXXl@{}}\toprule
     \textbf{ID} & \textbf{Description} & \textbf{Notes} & \textbf{Priority} \\\hline
-    1 & The user creates an appointment with another user.             & The
-    target can either be in our calendar system or in another iCal compatible
-    system. & High \\\hline
-    2 & The user accepts an invite to an appointment with another user & Same
-    as above
+    1.
+    & The user creates a calendar
+    & The user creates a new calendar
+    & High \\\hline
+    2 
+    & The user creates an appointment.
+    & The user creates an appointment in a calendar.
+    & High \\\hline
+    3 
+    & Change or delete an appointment.
+    & 
+    & High \\\hline
+    4 
+    & The user imports a calendar.
+    & The user imports a calendar.
+    & High \\\hline
+    5 
+    & The user exports a calendar.
+    & The user exports a calendar.
     & High \\
     \bottomrule
   \end{tabularx}
   \caption{Our use cases}
   \label{usecases}\centering% 
 \end{table*}
+
 \subsection{Use case 1}
-The user wish to create an appointment with another user. The user must first create the appointment in our client or in his own calendar system. He then selects the event in our client, and chooses "Invite Attendee". A list of contacts are shown, and the user can select on ore more contacts he wants to invite. The user can add a text to the invitation. The people invited will be notified. The user will receive notification when each invited attendee accepts or declines.
+\textbf{The user wish to create a new calendar}
+The user starts our calendar program. The MainView is displayed. The user can select a calendar from a drop-down menu or the user can create a new calendar by pressing the 'Create Calendar' button.
+By pressing 'Create Calendar' a new view is shown, where the user must select whether to create a new calendar blank or create a new and import data from an existing calendar (see Use Case 4).
+A field for 'Calendar Name' must be filled.
+A location for the calendar must be selected.
+The user can now press 'Create Calendar'.
+
 \subsection{Use case 2}
-The user has gotten an invitation to an appointment with another user, and he wants to reply.
-The user finds the invitation, in his notifications, in the client application. The user can press either 'Accept' or 'Decline'. The user can add a text to his reply.
+\textbf{The user wish to create an appointment in a calendar}
+If the program is not running, the user must start it.
+The program will have selected a calendar. The user can change calendar in the drop-down menu.
+When the correct calendar is selected, the user can press 'Create New Appointment'.
+A new view is shown, where the user can input the details and time of the appointment.
+When the required fields are correctly filled, 'Create Appointment' can be pressed.
+
+\subsection{Use case 3}
+\textbf{Change or delete an appointment}
+The user must select the appointment, in a calendar, the user wishes to alter.
+Double-click or press 'Edit' for editing.
+Press the Delete-key on the keyboard or press 'Delete' to delete the appointment. A confirmation dialogue box will be shown.
+
+\subsection{Use case 4}
+\textbf{The user imports a calendar}
+The user press 'Import Calendar' on the MainView of the program.
+A new view will be shown.
+A name for the new calendar must be written.
+An address to import from must be input.
+'Import Calendar' can be pressed. An error will be shown if the address was not valid.
+
+\subsection{Use case 5}
+\textbf{The user exports a calendar}
+The user press 'Export Calendar' on the MainView of the program.
+A new view will be shown.
+A calendar must be selected from a drop-down menu.
+An address to export to must be input.
+'Export Calendar' can be pressed. An error will be shown if the address was not valid.
+
 \newpage
