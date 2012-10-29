@@ -1,6 +1,6 @@
 *.db
 *.aux
-
+*.~vsd
 *.bbl
 
 *.blg
