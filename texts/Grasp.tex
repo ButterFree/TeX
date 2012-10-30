@@ -1,0 +1,18 @@
+\section{GRASP}
+\subsection{Creator}
+Our Main View (GUI class) will create sub views as the user explore our program. These will be held by the Main View.
+
+\subsection{Expert}
+Our Controller package contains an object which is responsible for calendars. It holds a list of CalendarServices and a list of Calendars.
+
+\subsection{Low Coupling}
+We keep our coupling low by using an interface we call CalenderService. If you write a class, which implements our interface, it can be used as a calendar handler. This might be iCal or simply a calender written to the file system. 
+We also use the MVC pattern which assigns clear responsibilities and makes it easy to switch one class with a different version.
+
+\subsection{Controller}
+We have a Controller package containing a Controller class. This class has the main responsibilities, error handling and it is used to couple the Model and View.
+
+\subsection{High Cohesion}
+Good examples of high cohesion are our Event class and CalenderService interface. They both have very specific and simple tasks to fulfill. 
+
+\newpage
