@@ -3,22 +3,30 @@
     \begin{table*}[ht]\centering
       \ra{1.3}
       \begin{tabularx}{\textwidth}{@{}|rX|@{}}\hline
-        \textbf{Operation:}        & addCalendar(calendar) \\
+        \textbf{Operation:}        & AddCalendar(Calendar) \\
         \textbf{Cross references:} & SSD diagram\\
-        \textbf{Preconditions:}    & Program is running. No existing calendars are required \\
-        \textbf{Postconditions:}   & A calendar now exists in the system \\\hline
+        \textbf{Preconditions:}    & Program is running. No existing calendars are required. \\
+        \textbf{Postconditions:}   & A calendar now exists in the system. \\\hline
       \end{tabularx}
     \end{table*}
   \subsection{OCT 2}
     \begin{table*}[ht]\centering
       \ra{1.3}
       \begin{tabularx}{\textwidth}{@{}|rX|@{}}\hline
-        \textbf{Operation:}        & getAnswer()\\
-        \textbf{Cross references:} & Secondary flow in SSD diagram \\
-        \textbf{Preconditions:}    & There is an appointment that needs monitoring \newline
-                                     (For status changes or synchronization)\\
-        \textbf{Postconditions:}   & - The appointment in the users calendar is updated \newline 
-                                     - The other attendees has been notified \\\hline
+        \textbf{Operation:}        & GetEvents(Calendar, TimePeriod)()\\
+        \textbf{Cross references:} & SSD diagram \\
+        \textbf{Preconditions:}    & Program holds the calendar the user wish to view. \\
+        \textbf{Postconditions:}   & The program shows events from the selected calendar within the given time period. \\\hline
+      \end{tabularx}
+    \end{table*}
+  \subsection{OCT 3}
+    \begin{table*}[ht]\centering
+      \ra{1.3}
+      \begin{tabularx}{\textwidth}{@{}|rX|@{}}\hline
+        \textbf{Operation:}        & AddEvent(Calendar, Event)()\\
+        \textbf{Cross references:} & SSD diagram \\
+        \textbf{Preconditions:}    & Program holds the calendar the user wish to add an event to. \\
+        \textbf{Postconditions:}   & Event is saved to the calendar. The program shows events from the selected calendar within the given time period. \\\hline
       \end{tabularx}
     \end{table*}
 \newpage
